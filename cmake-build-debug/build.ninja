@@ -49,8 +49,40 @@ cmake_ninja_workdir = /Users/choibusungman/Desktop/IPC$ /cmake-build-debug/
 
 build cmake_object_order_depends_target_IPC_: phony || CMakeFiles/IPC_.dir
 
+build CMakeFiles/IPC_.dir/namedpipe_server.c.o: C_COMPILER__IPC__Debug /Users/choibusungman/Desktop/IPC$ /namedpipe_server.c || cmake_object_order_depends_target_IPC_
+  DEP_FILE = CMakeFiles/IPC_.dir/namedpipe_server.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -std=gnu11
+  OBJECT_DIR = CMakeFiles/IPC_.dir
+  OBJECT_FILE_DIR = CMakeFiles/IPC_.dir
+  TARGET_COMPILE_PDB = CMakeFiles/IPC_.dir/
+  TARGET_PDB = IPC_.pdb
+
+build CMakeFiles/IPC_.dir/namedpipe_client.c.o: C_COMPILER__IPC__Debug /Users/choibusungman/Desktop/IPC$ /namedpipe_client.c || cmake_object_order_depends_target_IPC_
+  DEP_FILE = CMakeFiles/IPC_.dir/namedpipe_client.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -std=gnu11
+  OBJECT_DIR = CMakeFiles/IPC_.dir
+  OBJECT_FILE_DIR = CMakeFiles/IPC_.dir
+  TARGET_COMPILE_PDB = CMakeFiles/IPC_.dir/
+  TARGET_PDB = IPC_.pdb
+
 build CMakeFiles/IPC_.dir/pipe.c.o: C_COMPILER__IPC__Debug /Users/choibusungman/Desktop/IPC$ /pipe.c || cmake_object_order_depends_target_IPC_
   DEP_FILE = CMakeFiles/IPC_.dir/pipe.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -std=gnu11
+  OBJECT_DIR = CMakeFiles/IPC_.dir
+  OBJECT_FILE_DIR = CMakeFiles/IPC_.dir
+  TARGET_COMPILE_PDB = CMakeFiles/IPC_.dir/
+  TARGET_PDB = IPC_.pdb
+
+build CMakeFiles/IPC_.dir/shared_setter.c.o: C_COMPILER__IPC__Debug /Users/choibusungman/Desktop/IPC$ /shared_setter.c || cmake_object_order_depends_target_IPC_
+  DEP_FILE = CMakeFiles/IPC_.dir/shared_setter.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -std=gnu11
+  OBJECT_DIR = CMakeFiles/IPC_.dir
+  OBJECT_FILE_DIR = CMakeFiles/IPC_.dir
+  TARGET_COMPILE_PDB = CMakeFiles/IPC_.dir/
+  TARGET_PDB = IPC_.pdb
+
+build CMakeFiles/IPC_.dir/shared_show.c.o: C_COMPILER__IPC__Debug /Users/choibusungman/Desktop/IPC$ /shared_show.c || cmake_object_order_depends_target_IPC_
+  DEP_FILE = CMakeFiles/IPC_.dir/shared_show.c.o.d
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -std=gnu11
   OBJECT_DIR = CMakeFiles/IPC_.dir
   OBJECT_FILE_DIR = CMakeFiles/IPC_.dir
@@ -65,7 +97,7 @@ build CMakeFiles/IPC_.dir/pipe.c.o: C_COMPILER__IPC__Debug /Users/choibusungman/
 #############################################
 # Link the executable IPC_
 
-build IPC_: C_EXECUTABLE_LINKER__IPC__Debug CMakeFiles/IPC_.dir/pipe.c.o
+build IPC_: C_EXECUTABLE_LINKER__IPC__Debug CMakeFiles/IPC_.dir/namedpipe_server.c.o CMakeFiles/IPC_.dir/namedpipe_client.c.o CMakeFiles/IPC_.dir/pipe.c.o CMakeFiles/IPC_.dir/shared_setter.c.o CMakeFiles/IPC_.dir/shared_show.c.o
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2
   OBJECT_DIR = CMakeFiles/IPC_.dir
   POST_BUILD = :

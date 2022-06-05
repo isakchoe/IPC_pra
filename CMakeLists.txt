@@ -4,4 +4,4 @@ project(IPC_ C)
 set(CMAKE_C_STANDARD 11)
 
 add_executable(IPC_
-        pipe.c)
+        namedpipe_server.c namedpipe_client.c pipe.c shared_setter.c shared_show.c)
