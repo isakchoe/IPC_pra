@@ -89,6 +89,22 @@ build CMakeFiles/IPC_.dir/shared_show.c.o: C_COMPILER__IPC__Debug /Users/choibus
   TARGET_COMPILE_PDB = CMakeFiles/IPC_.dir/
   TARGET_PDB = IPC_.pdb
 
+build CMakeFiles/IPC_.dir/UDS_client.c.o: C_COMPILER__IPC__Debug /Users/choibusungman/Desktop/IPC$ /UDS_client.c || cmake_object_order_depends_target_IPC_
+  DEP_FILE = CMakeFiles/IPC_.dir/UDS_client.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -std=gnu11
+  OBJECT_DIR = CMakeFiles/IPC_.dir
+  OBJECT_FILE_DIR = CMakeFiles/IPC_.dir
+  TARGET_COMPILE_PDB = CMakeFiles/IPC_.dir/
+  TARGET_PDB = IPC_.pdb
+
+build CMakeFiles/IPC_.dir/UDS_server.c.o: C_COMPILER__IPC__Debug /Users/choibusungman/Desktop/IPC$ /UDS_server.c || cmake_object_order_depends_target_IPC_
+  DEP_FILE = CMakeFiles/IPC_.dir/UDS_server.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -std=gnu11
+  OBJECT_DIR = CMakeFiles/IPC_.dir
+  OBJECT_FILE_DIR = CMakeFiles/IPC_.dir
+  TARGET_COMPILE_PDB = CMakeFiles/IPC_.dir/
+  TARGET_PDB = IPC_.pdb
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target IPC_
@@ -97,7 +113,7 @@ build CMakeFiles/IPC_.dir/shared_show.c.o: C_COMPILER__IPC__Debug /Users/choibus
 #############################################
 # Link the executable IPC_
 
-build IPC_: C_EXECUTABLE_LINKER__IPC__Debug CMakeFiles/IPC_.dir/namedpipe_server.c.o CMakeFiles/IPC_.dir/namedpipe_client.c.o CMakeFiles/IPC_.dir/pipe.c.o CMakeFiles/IPC_.dir/shared_setter.c.o CMakeFiles/IPC_.dir/shared_show.c.o
+build IPC_: C_EXECUTABLE_LINKER__IPC__Debug CMakeFiles/IPC_.dir/namedpipe_server.c.o CMakeFiles/IPC_.dir/namedpipe_client.c.o CMakeFiles/IPC_.dir/pipe.c.o CMakeFiles/IPC_.dir/shared_setter.c.o CMakeFiles/IPC_.dir/shared_show.c.o CMakeFiles/IPC_.dir/UDS_client.c.o CMakeFiles/IPC_.dir/UDS_server.c.o
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2
   OBJECT_DIR = CMakeFiles/IPC_.dir
   POST_BUILD = :
